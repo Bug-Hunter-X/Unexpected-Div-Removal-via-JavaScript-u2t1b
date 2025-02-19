@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will remain visible.
+  </div>
+  <script>
+    // Conditional removal using a flag or event
+    let removeDiv = false; // Set to true to simulate a condition for removal
+
+    if (removeDiv) {
+      document.getElementById("myDiv").remove();
+    }
+  </script>
+</body>
+</html>
